@@ -1,0 +1,30 @@
+header {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border:  1px solid rgba(0,0,0, 0.1);
+}
+
+nav {
+    background-color: black;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+}
