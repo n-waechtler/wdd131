@@ -11,6 +11,10 @@ span {
     justify-content: center;
 }
 
+header {
+    max-width: 840;    
+}
+
 header,
 footer {
     max-width: 840px;
@@ -55,8 +59,9 @@ nav ul li {
 }
 
 body {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
 }
 
 h1 {
