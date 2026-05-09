@@ -30,6 +30,7 @@ header, footer {
 
 nav {
     background-color: var(--color);
+    color: #fff;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -110,6 +111,7 @@ nav a:hover {
 
 h3 {
     text-align: center;
+    padding: 5px;
 }
 
 nav ul li {
