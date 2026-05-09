@@ -2,7 +2,5 @@
 const yearSpan = document.getElementById("currentyear");
 yearSpan.textContent = new Date().getFullYear();
 
-// 2. Get the last modified date of the document and put it in the second paragraph
-const lastModifiedPara = document.getElementById("lastModified");
-lastModifiedPara.textContent = `Last Modification: ${document.lastModified}`;
+document.getElementById("lastModified").innerHTML = document.lastModified;
 
