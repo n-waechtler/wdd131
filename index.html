@@ -52,7 +52,7 @@
             <img src="images/utah-flag.jpg" alt="Utah State Flag" width="200">
             <figcaption>Official Flag of Utah</figcaption>
             </figure>
-            <p>Utah[c][d] is a landlocked state in the Mountain West subregion of the Western United States. It is one of the Four
+            <p>Utah is a landlocked state in the Mountain West subregion of the Western United States. It is one of the Four
             Corners states, sharing a border with Arizona, Colorado, and New Mexico. It also borders Wyoming to the northeast, Idaho
             to the north, and Nevada to the west. In comparison to all the U.S. states and territories, Utah, with a population of
             just over three million, is the 13th-largest by area, the 30th-most populous, and the 11th-least densely populated.
@@ -63,11 +63,14 @@
         </section>
     </main>
     <footer>
-        <p>
-            <span id="currentyear"></span>
-            &copy; Nick Waechtler Utah
-        </p>
+        <p>&copy;<span id="currentyear"></span> 🏕️ Nick Waechtler 🏕️ Utah</p>
         <p class="lastModified"></p>
     </footer>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentyear').textContent = currentYear;
+
+        document.getElementById('lastModified').textContent = `Last Modification: ${document.lastModified}`;
+     </script>
 </body>
 </html>
