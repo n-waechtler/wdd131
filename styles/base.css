@@ -56,6 +56,7 @@ nav a:hover {
 }
 
 .card {
+    display: grid;
     border: 1px solid #2c4e6c;
     border-radius: 8px;
     margin: 20px auto;
