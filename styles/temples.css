@@ -12,6 +12,7 @@
     padding: .5rem .75rem;
     background-color: rgb(6, 6, 85);
     color: #fff;
+    margin-left: auto;
 }
 
 #menu::before {
@@ -52,19 +53,6 @@
     display: block;
 }
 
-@media only screen and (min-width: 40em) {
-    .navigation {
-        display: flex;
-    }
-    .navigation li {
-        display: block;
-        flex: 1 1 100%;
-    }
-    #menu {
-        display: none;
-    }
-}
-
 main {
     max-width: 95%;
     margin: 1.5rem auto;
@@ -84,9 +72,8 @@ figure {
 }
 
 figure img {
-    width: 400;
-    height: auto;
-    display: block;
+    width: 100%;
+    max-width: 400;
 }
 
 figcaption {

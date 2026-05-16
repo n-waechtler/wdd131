@@ -1,1 +1,25 @@
-@media screen and (min-width: 640px) {}
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 840px;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+}
