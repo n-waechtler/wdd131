@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description">
+    <meta name="author">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/utah-hero.webp" media="(min-width: 1000px)">
+            <source srcset="images/utah-hero.webp" media="(min-width: 550px)">
+            <img src="images/utah-hero.webp" alt="Arches, Utah">
+        </picture>
+        <section class="data-box">
+            <h2>Data</h2>
+            <p><span>Area:</span> 219,882 sq km</p>
+            <p><span>Population:</span> 3,574,825</p>
+            <p><span>Capital:</span> Salt Lake City</p>
+            <p><span>Languages:</span> English</p>
+            <p><span>Currency:</span> United States Dollar</p>
+            <p><span>Time Zone:</span> Mountain Standard Time</p>
+            <p><span>Calling Code:</span> 801, 385, 435</p>
+            <p><span>Internet TLD:</span> .gov</p>
+        </section>
+        <section class="weather-box">
+            <h2>Weather
+                <span class="weather-emoji"></span>
+            </h2>
+            <img src="images/weather.svg" alt="Partly cloudy icon" class="mobile-svg">
+            <div class="weather-details">
+                <p><span>Temperature:</span> 65 °F</p>
+                <p><span>Conditions:</span> Partly Cloudy</p>
+                <p><span>Wind:</span> 6 mph</p>
+                <p><span>Wind Chill:</span> 0</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🏕️ Nick Waechtler 🏕️ Utah</p>
+        <p id="lastModified"></p>
+    </footer>  
+</body>
+</html>
