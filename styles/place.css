@@ -66,6 +66,19 @@ picture, picture img {
     margin-bottom: 20px;
     color: #000000;
     font-weight: bold;
+    position: relative;
+}
+
+.weather-box h2::after {
+    content: "";
+    display: block;
+    margin: 20px auto 20px auto;
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/weather.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .mobile-svg {
