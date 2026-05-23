@@ -1,0 +1,65 @@
+@media (min-width: 1000px) {
+    
+    header, main, footer {
+        position: relative;
+        max-width: 1100px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    main picture img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+    }
+
+    .data-box, .weather-box {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        z-index: 5;
+        width: 100%;
+        max-width: 320px;
+        padding: 0;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .data-box {
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+    .weather-box {
+        bottom: 40px;
+        right: 30px;
+        margin: 0;
+    }
+
+    .data-box h2, .weather-box h2 {
+        background-color: rgb(167, 1, 1, 0.6);
+        color: #ffffff;
+        width: calc(100% - 15px);
+        margin: 10px 0 15px -15px;
+        box-sizing: border-box;
+        padding: 14px 20px;
+        font-size: 1.4rem;
+        text-align: left;
+        display: block;
+    }
+
+    .weather-box img.mobile-svg {
+        position: absolute;
+        top: 13px;
+        right: 40px;
+        width: 45px;
+        height: auto;
+        margin: 0;
+        z-index: 10;
+    }
+
+  
+}
