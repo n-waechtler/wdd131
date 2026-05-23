@@ -84,15 +84,24 @@ picture, picture img {
     font-size: 1.1rem;
     margin-bottom: 10px;
     color: #333333;
+    display: flex;
+    align-items: center;
 }
 
 .weather-details span {
     font-weight: bold;
     color: #000000;
     display: inline-block;
-    min-width: 110px;
+    min-width: 120px;
     text-align: right;
     margin-right: 8px;
+}
+
+#windchill-value {
+    font-weight: normal;
+    display: inline;
+    text-align: left;
+    min-width: unset;
 }
 
 footer {
