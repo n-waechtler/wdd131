@@ -53,15 +53,13 @@
     }
 
     .weather-box h2::after {
-        content: "";
+        content: "🌤️";
         position: absolute;
-        top: -12px;
+        top: -11px;
         right: 30px;
         width: 40px;
         height: 40px;
-        background-image: url('../images/weather.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-image: none;
     }
 
   
