@@ -133,4 +133,60 @@ hambutton.addEventListener('click', (e) => {
     }
 });
 
+const heading = document.querySelector('main h1');
+
+document.getElementById("home").addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Home";
+    displayTemples(temples);
+});
+
+document.getElementById("old").addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Old";
+
+    const oldTemples = temples.filter(
+        temple => parseInt(temple.dedicated) < 1999
+    );
+
+    displayTemples(oldTemples);
+});
+
+document.getElementById("new").addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "New";
+
+    const newTemples = temples.filter(
+        temple => parseInt(temple.dedicated) > 2000
+    );
+
+    displayTemples(newTemples);
+});
+
+document.getElementById("large").addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Large";
+
+    const largeTemples = temples.filter(
+        temple => temple.area > 90000
+    );
+
+    displayTemples(largeTemples);
+});
+
+document.getElementById("small").addEventListener("click", (e) => {
+    e.preventDefault();
+    heading.textContent = "Small";
+
+    const smallTemples = temples.filter(
+        temple => temple.area < 50000
+    );
+
+    displayTemples(smallTemples);
+});
+
 displayTemples(temples);
+
+
+
+
