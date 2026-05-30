@@ -146,7 +146,7 @@ document.getElementById("old").addEventListener("click", (e) => {
     heading.textContent = "Old";
 
     const oldTemples = temples.filter(
-        temple => parseInt(temple.dedicated) < 1999
+        temple => parseInt(temple.dedicated) < 1900
     );
 
     displayTemples(oldTemples);
@@ -179,7 +179,7 @@ document.getElementById("small").addEventListener("click", (e) => {
     heading.textContent = "Small";
 
     const smallTemples = temples.filter(
-        temple => temple.area < 50000
+        temple => temple.area < 10000
     );
 
     displayTemples(smallTemples);
