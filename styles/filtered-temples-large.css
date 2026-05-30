@@ -13,14 +13,13 @@
     }
 
     main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        max-width: 840px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1rem;
     }
 
-    main h1 {
-        grid-column: 1 / -1;
+    h1 {
+        text-align: center;
     }
 
     nav {
@@ -51,6 +50,35 @@
         align-items: center;
     }
 
+    .temple-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .temple-card {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .temple-card h2 {
+        margin-top: 0;
+    }
+
+    .temple-card span {
+        color: purple;
+        font-variant: small-caps;
+    }
+
+    .temple-card img {
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    }
+
     .header-top {
         display: flex;
         justify-content: space-between;
@@ -66,7 +94,7 @@
 
     header,
     footer {
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 

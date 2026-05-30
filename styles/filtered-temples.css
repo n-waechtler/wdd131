@@ -49,7 +49,7 @@
 .navigation a:hover,
 .navigation a:active {
     color: white;
-    background-color: black;
+    background-color: rgb(206, 119, 5);
 }
 
 .navigation.show {
@@ -81,28 +81,9 @@ main h1 {
     text-align: center;
 }
 
-figure {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    margin: 0 0 2rem 0;
-    padding: 10px;
-}
-
-figure img {
-    width: 100%;
-    max-width: 400;
-}
-
-figcaption {
-    text-align: center;
-    margin-top: 8px;
-    font-weight: bold;
-}
-
 header,
 footer {
-    max-width: 840px;
+    max-width: 450px;
     margin: 0 auto;
 }
 
@@ -128,6 +109,38 @@ body {
     font-family: "Amarante", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.temple-card img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-top: 1rem auto 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+}
+
+.temple-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1rem;
+    max-width: 450px;
+    margin: 0 auto 2rem auto;
+}
+
+.temple.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temple-card h2 {
+    margin-top: 0;
+}
+
+.temple-card span {
+    color: purple;
+    font-variant: small-caps;
 }
 
 footer {
