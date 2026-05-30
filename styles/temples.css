@@ -20,7 +20,7 @@
 }
 
 #menu.show::before {
-    content: "X";
+    content: "x";
 }
 
 .navigation {
