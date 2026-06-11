@@ -5,13 +5,7 @@
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 header, footer {
@@ -37,12 +31,24 @@ footer p {
 }
 
 form {
-    background-color: #dad5dc;
+    background-color: #e2e1e9;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+header, footer, form {
+    width: 100%;
+}
+
+.optional {
+    color: blue;
+    font-size: .85rem;
+    font-weight: normal;
 }
 
 fieldset {
@@ -75,15 +81,14 @@ select, input[type="date"], textarea, input[type="text"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 10px 0px;
 }
 
 .rating-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 4px;
-    font-size: .85rem;
 }
 
 .rating-item input[type="radio"] {
@@ -107,4 +112,11 @@ select, input[type="date"], textarea, input[type="text"] {
 .checkbox-item label {
     margin: 0;
     font-weight: normal;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
 }

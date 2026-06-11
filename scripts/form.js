@@ -30,3 +30,18 @@ const products = [
         averagerating: 5.0
     }
 ];
+
+const productSelect = document.getElementById("product-name");
+
+products.forEach(product => {
+    const option = document.createElement("option");
+
+    option.value = product.id;
+
+    option.textContent = product.name
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    
+    productSelect.appendChild(option);
+});
