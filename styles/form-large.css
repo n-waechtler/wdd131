@@ -1,0 +1,35 @@
+@media screen and (min-width: 600px) {
+    header, footer, form {
+        max-width: 650;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    fieldset:nth-of-type(1),
+    fieldset:nth-of-type(2),
+    fieldset:nth-of-type(4),
+    input[type="submit"] {
+        grid-column: span 2;
+    }
+
+    fieldset:nth-of-type(3) {
+        grid-column: span 1;
+    }
+
+    fieldset:last-of-type {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+}
