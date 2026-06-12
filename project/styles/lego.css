@@ -30,5 +30,13 @@ main {
 
 section {
     padding: 20px;
-    
+
+}
+
+figure {
+    max-width: 400px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
 }
