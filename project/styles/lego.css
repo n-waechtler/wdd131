@@ -27,3 +27,8 @@ header, footer {
 main {
     max-width: 400px;
 }
+
+section {
+    padding: 20px;
+    
+}
