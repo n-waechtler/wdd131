@@ -42,6 +42,26 @@ main {
     max-width: 450px;
 }
 
+.section1 {
+    max-width: 450px;
+    text-align: center;
+    padding: 15px;
+}
+
+.section1 img {
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding-top: 5px;
+}
+
+h2 {
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+}
+
 #menu {
     display: block;
     font-size: 2rem;
