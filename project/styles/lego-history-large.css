@@ -62,9 +62,10 @@
         margin: 0 auto;
     }
 
-    .section2 h4 {
+    .section2 h2 {
         grid-column: 1/ -1;
         width: 100%;
+        max-width: 1200px;
         margin-bottom: 10px;
     }
 
