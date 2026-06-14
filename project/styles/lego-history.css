@@ -20,7 +20,7 @@ header {
     width: 100%;
     max-width: 450px;
     text-align: center;
-    padding: 15px 0 0 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -40,12 +40,13 @@ footer a {
 
 main {
     max-width: 450px;
+    width: 100%;
 }
 
 .section1 {
     max-width: 450px;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 .section1 img {
