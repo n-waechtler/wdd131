@@ -18,7 +18,7 @@ header {
     background-color: blue;
     color: white;
     width: 100%;
-    max-width: 450px;
+    max-width: 100%;
     text-align: center;
     padding: 0;
     box-sizing: border-box;
@@ -28,7 +28,7 @@ footer {
     background-color: blue;
     color: white;
     width: 100%;
-    max-width: 450px;
+    max-width: 100%;
     text-align: center;
     padding: 15px;
     box-sizing: border-box;
@@ -39,12 +39,12 @@ footer a {
 }
 
 main {
-    max-width: 450px;
+    max-width: 100%;
     width: 100%;
 }
 
 .section1, .section2 {
-    max-width: 450px;
+    max-width: 100%;
     text-align: center;
     padding: 10px;
 }
@@ -176,7 +176,7 @@ header h1 {
 }
 
 picture img {
-    max-width: 450px;
+    max-width: 100%;
     width: 100%;
     height: auto;
 }
