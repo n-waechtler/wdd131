@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Fanatics</title>
+    <meta name="description" content="Nick Waechtlers Site plan Lego Week 6 project - WDD131">
+    <meta name="author" content="Nick Waechtler">
+    <link rel="stylesheet" href="styles/lego-connection.css">
+    <link rel="stylesheet" href="styles/lego-connect-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amarante&family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/lego-connection.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <img src="images/lego-fanatics.webp" alt="Website logo" width="150" loading="lazy">
+            <h1>Lego Connect</h1>
+            <a id="menu" href="#" title="open navigation menu"></a>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="lego-history.html">History</a></li>
+                <li><a href="lego-connection.html">Connection</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture>
+            <img src="images/lego-connect.jpg" alt="Lego Figures" width="600" height="400" loading="lazy">
+        </picture>
+        <section class="section1">
+            <h2>A Place to Connect</h2>
+            <div class="history-block">
+                <img src="images/lego-brickslopes.webp" alt="Lego Brickslopes" width="600" height="400" loading="lazy">
+                <div>
+                    <p>Here is a place where Lego fans near and far can connect with one another. I have always found
+                        that Lego is much more fun when we can share our hobby together. There are so many ways to 
+                        connect with one another. Wether its at a Lego store, one of the many Legoland theme parks,
+                        Lego video games, Lego conventions, and even through Lego movies. I'd love to see any of 
+                        your favorite Lego sets, or original creations! Lets connect and have some fun with Lego! 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <h3>Connection Form</h3>
+        <form method="get" action="review.html">
+            <fieldset>
+                <label for="product-name">Let's Connect!</label>
+                <select name="productName" id="product-name" required>
+                    <option value="" disabled selected>Select to connect...</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>How Much Do You Love Lego?</legend>
+                <div class="rating-group">
+                    <div class="rating-item">
+                        <input type="radio" id="rating-1" name="overallRating" value="1" required>
+                        <label for="rating-1">&star;</label>
+                    </div>
+        
+                    <div class="rating-item">
+                        <input type="radio" id="rating-2" name="overallRating" value="2" required>
+                        <label for="rating-2">&star; &star;</label>
+                    </div>
+        
+                    <div class="rating-item">
+                        <input type="radio" id="rating-3" name="overallRating" value="3" required>
+                        <label for="rating-3">&star; &star; &star;</label>
+                    </div>
+        
+                    <div class="rating-item">
+                        <input type="radio" id="rating-4" name="overallRating" value="4" required>
+                        <label for="rating-4">&star; &star; &star; &star;</label>
+                    </div>
+        
+                    <div class="rating-item">
+                        <input type="radio" id="rating-5" name="overallRating" value="5" required>
+                        <label for="rating-5">&star; &star; &star; &star; &star;</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="install-date">Date of Contact</label>
+                <input type="date" id="install-date" name="installDate" required>
+            </fieldset>
+            <fieldset>
+                <legend>Favorite Things About Lego (Check all that apply)</legend>
+                <div class="checkbox-group">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-durability" name="usefulFeatures" value="variety">
+                        <label for="feature-durability">Variety of Sets</label>
+                    </div>
+        
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-design" name="usefulFeatures" value="connection">
+                        <label for="feature-design">Connecting with Lego Fans</label>
+                    </div>
+        
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-performance" name="usefulFeatures" value="performance">
+                        <label for="feature-performance">Legoland</label>
+                    </div>
+        
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-ease" name="usefulFeatures" value="easeOfUse">
+                        <label for="feature-ease">Lego Store</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label for="written-review">
+                    What Got You Into Lego? <span class="optional">(Optional)</span>
+                </label>
+                <textarea name="writtenReview" id="written-review" rows="5" placeholder="Share your experience..."></textarea>
+        
+                <label for="user-name">
+                    User Name <span class="optional">(Optional)</span>
+                </label>
+                <input type="text" id="user-name" name="userName" placeholder="Your Name">
+            </fieldset>
+            <input type="submit" value="Send Connection">
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🏕️ Nick Waechtler 🏕️ Utah</p>
+        <p id="lastModified"></p>
+        <a href="references.html">References</a>
+    </footer>
+</body>
+
+</html>

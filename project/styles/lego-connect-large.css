@@ -1,0 +1,139 @@
+@media only screen and (min-width: 800px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+        padding: 0 20px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header,
+    main,
+    footer,
+    .section1,
+    .section2 {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header-top {
+        padding: 20px;
+    }
+
+    #menu {
+        display: none !important;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        background-color: red;
+    }
+
+    .navigation li {
+        display: block !important;
+        width: auto;
+    }
+
+    .navigation a {
+        padding: 1rem 2rem;
+        color: black;
+        background-color: red;
+    }
+
+    .navigation a:hover {
+        background-color: red;
+    }
+
+    picture img {
+        max-width: 1200px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .section2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 30px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .section2 h2 {
+        grid-column: 1/ -1;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 10px;
+    }
+
+    figure img {
+        max-width: 400px;
+        height: auto;
+
+    }
+
+    .history-block {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin: 40px 0;
+        text-align: left;
+    }
+
+    .history-block>figure,
+    .history-block>div {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    .history-block.invert {
+        flex-direction: row-reverse;
+    }
+
+    header,
+    footer,
+    form {
+        max-width: 650;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin: 40px auto;
+        border-radius: 6px;
+    }
+    
+    fieldset:nth-of-type(1),
+    fieldset:nth-of-type(2),
+    fieldset:nth-of-type(4),
+    input[type="submit"] {
+        grid-column: span 2;
+    }
+    
+    fieldset:nth-of-type(3) {
+        grid-column: span 1;
+    }
+    
+    fieldset:last-of-type {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+}
