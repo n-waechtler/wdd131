@@ -127,7 +127,7 @@ h3 {
 .navigation a:hover,
 .navigation a:active {
     color: white;
-    background-color: red;
+    background-color: blue;
 }
 
 .navigation.show {
