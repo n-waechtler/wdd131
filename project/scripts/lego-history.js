@@ -7,6 +7,16 @@ const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 const title = document.querySelector('header h1');
 
+const isMenuOpen = localStorage.getItem('menuOpen') == 'true';
+
+if (isMenuOpen) {
+    mainnav.classList.add('show');
+    hambutton.classList.add('show');
+    if (window.innerWidth < 1000) {
+        title.classList.add('hide');
+    }
+}
+
 hambutton.addEventListener('click', (e) => {
     e.preventDefault();
 
